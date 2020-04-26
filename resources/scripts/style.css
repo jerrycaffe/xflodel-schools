@@ -80,17 +80,10 @@ li{
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
-.contacts {
-	width: 90%;
-	height: 25%;
-	color: #fff;
-	display: flex;
-	flex-direction: column;
-	align-items: end;
-	padding: 20px 50px;
-}
+
 
 .showcase-text{
   text-align: center;
@@ -104,19 +97,26 @@ li{
   height: 80vh;
 }
 /* End of events */
+/* Anthem */
+.anthem{
+  background: #fff;
+  padding: 20px 70px;
+ 
+}
+/* End of school anthem */
 /* Miision session */
 .mission {
-	
+	background: #f7f7f7;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  
+  padding: 20px 0;
 }
 .card{
   flex-basis: 480px;
   background: rgb(226, 223, 223);
   margin: 20px;
-  height: 300px;
+  height: 350px;
   padding: 20px;
   text-align: center;
   display: flex;
@@ -149,8 +149,40 @@ color: #fff;
   background: url('../img/China-online-education.jpg') center center/cover; 
 }
 /* End of mission */
+/* Contacts here */
+.contacts {
+  background: #fff;
+ 
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 1.5rem;
+
+}
+address{
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+.office-address{
+  padding: 10px;
+  margin: 10px;
+  background: #f7f7f7;
+  padding: 20px;
+  font-size: 1.8rem;
+  width: 400px;
+  border-radius: 15px;
+
+}
+#contacts i{
+  font-size: 1.4rem;
+  color: blue;
+  margin: 15px;
+}
+/* Contacts end here */
 /* Footer starts here */
 footer {
+  
 	height: 30vh;
 	text-align: center;
 	background: #f6fdf6;
