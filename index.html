@@ -5,10 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script src="https://kit.fontawesome.com/5635c9fe4e.js" crossorigin="anonymous"></script>
+  
   <link rel="stylesheet" href="resources/scripts/style.css">
+ 
   <title>Xflodel Schools</title>
 </head>
 <body>
+  
     <nav id="topNavigation">
       <div class="logo"><a href="www.xflodelschools.com">
 
@@ -17,29 +20,41 @@
         
       </div>
       <div class="links">
-        <ul>
-          <li><a href="#" class="btn-pry">Home</a></li>
-          <li><a href="#contacts" class="btn-pry">Contact</a></li>
-          <li><a href="#gallery" class="btn-pry">Gallery</a></li>
-          <li><a href="#about" class="btn-pry">About</a></li>
-        </ul>
-      </div>
+          <div id="myNav" class="overlay">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <div class="overlay-content" id="closeOnSelect">
+                <a href="#">Home</a>
+                <a href="#contacts">Contact</a>
+                <a href="#">Clients</a>
+                <a href="#">Contact</a>
+              </div>
+            </div>  
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+            </div>
     </nav>
-    <div class="showcase">
-      <div class="showcaseTint">
-        
-          <div class="showcase-text">
-            <p class="leading-text">Welcome to Xflodel Schools</p>
-            <h4>Our aim is to model the younger generations to be the true of the Nation</h4>
-            <a href="" class="btn-sec">Preparatory</a>
-            <a href="" class="btn-sec">Nusery</a>
-            <a href="" class="btn-sec">Primary</a>
-            <a href="" class="btn-sec">College</a>
+    
+     <header>
+
+       <div class="showcase">
+         <div class="showcaseTint">
+           
+           <div class="showcase-text">
+             <p class="leading-text">Welcome to Xflodel Schools</p>
+             <span class="aims">Our aim is to model the younger generations to be the true of the Nation</span>
+             <div class="showcase-btns">
+               
+               <a href="" class="btn-sec">Read More</a>
+               <a href="" class="btn-sec">College</a>
+              </div>
+            </div>
+            
           </div>
-      </div>
-    </div>
-    <!-- Event session -->
-    <div class="events">
+          
+        </div>
+        
+    </header>
+        <!-- Event session -->
+        <div class="events">
       <h1>Upcoming events</h1>
       <p>
         
@@ -93,7 +108,7 @@
                   <h3>Our Vision</h3>
                   <p><i class="fas fa-hand-point-right"></i> To foster the social, Emotional, Physical, Cognitive and Language development recognising different learning styles, and  the needs of the individual child.</p>
                   <p><i class="fas fa-hand-point-right"></i> To value parents as partners in the caring and education of the child by sharing information andbuilding relationships.</p>
-                
+               
               </div>
             </div>
             <div class="card-4 card">
@@ -133,7 +148,9 @@
           </a>
           
           <a href="mailto:xflodelprepschool@gmail.com">
-            <i class="fas fa-mail-bulk"></i> xflodelprepschool@gmail.com</i>
+            <i class="fas fa-mail-bulk">
+              xflodelprepschool@gmail.com
+            </i>
           </a>
           <a href="whatsapp:contact=+2348028576049@s.whatsapp.com&message="I would like to make enquiries">
             <i class="fab fa-whatsapp"> +2348028576049</i>
@@ -144,5 +161,6 @@
       <footer>
       <p>Xflodel Schools &copy;2020</p>
       </footer>
+      <script src="/resources/scripts/script.js"></script>
 </body>
 </html>

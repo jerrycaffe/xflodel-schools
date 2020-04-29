@@ -5,6 +5,9 @@ body{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 /* Navigation styling */
+/* .mobile-nav{
+  display: none;
+} */
 #topNavigation{
   background: #f6fdf6;
   display: flex;
@@ -12,13 +15,13 @@ body{
   padding: 5px 30px;
   align-items: center;
 }
-ul{
+/* ul{
   display: flex;
-}
+} */
 
-nav a{
+/* nav a{
   margin: 0 20px;
-}
+} */
 
 .logo img{
   width: 200px;
@@ -68,14 +71,28 @@ li{
 /* Utility class ends here */
 
 /* Showcase Styling starts here */
+header{
+  height: 85vh;
+}
 .showcase{
   background: #000 url('../img/check.JPG') no-repeat center/cover;
   height: 100vh;
+  
 }
+.showcase-btns{
+  display: flex;
+  justify-content: center;
+  
+}
+.aims{
+  font-size: 1.5rem;
+}
+
+
 .showcaseTint{
   position: absolute;
   background: rgba(0, 0, 0, 0.5);
-  height: 100%;
+  height: 85vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -189,3 +206,123 @@ footer {
 	padding: 20px 0;
 }
 /* Footer ends here */
+
+/* Media quary tab*/
+/* 
+@media screen and (max-width: 768px) {
+  .desktop-nav {
+    display: none;
+  }
+  .mobile-nav{
+    display: flex;
+  
+  }
+  .mobile-btn{
+    display: block;
+  }
+} */
+/* copied styles */
+.overlay {
+  height: 50%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 10%;
+  width: 50%;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-width: 450px) {
+  body{
+    font-size: 1rem;
+   
+  }
+  .overlay a{
+    font-size: 1.2rem;
+  }
+  .overlay .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 2.5rem;
+  }
+  
+  h1{
+    font-size: 1rem;
+  }
+  .leading-text{
+    font-size: 1.5rem;
+  }
+  .anthem{
+    padding: 20px;
+  }
+  .logo img{
+    width: 100px;
+    height: 40px;
+  }
+  .showcase-btns{
+    display: none;
+  }
+  address{
+    display: block;
+  }
+  .office-address {
+    padding: 10px;
+    margin: 10px auto;
+    background: #f7f7f7;
+    padding: 10px 0;
+    font-size: 1.2rem;
+    width: auto;
+    border-radius: 15px;
+}
+.card {
+  flex-basis: auto;
+  background: rgb(226, 223, 223);
+  margin: 20px auto;
+  height: auto;
+  padding: 20px 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+#contacts i{
+  font-size: 1rem;
+  display: block;
+}
+.events{
+  height: auto;
+  padding: 20px;
+}
+}
